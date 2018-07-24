@@ -4,8 +4,8 @@ namespace CellTree
 {
 	struct Cell
 	{
-		Cell() : myIsAlive(false), myNeighbors(0) {}
-		bool myIsAlive : 1;
+		Cell() : myNeighbors(0), myIsAlive(false) {}
 		char myNeighbors;
+		bool myIsAlive : 1;
 	};
 }
