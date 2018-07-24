@@ -7,7 +7,6 @@
 #include "../CellTree/Tree.h"
 #include "../CellTree/Constants.h"
 
-#include <fstream>
 #include <list>
 
 namespace GameOfLife

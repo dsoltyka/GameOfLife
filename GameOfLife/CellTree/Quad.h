@@ -21,9 +21,8 @@ namespace CellTree
 	template <int BitDepth>
 	class Quad
 	{
-		static const int ourBitDepth = BitDepth;
-		typedef Quad<(ourBitDepth - 1)> ChildQuad;
-		typedef Quad<(ourBitDepth + 1)> ParentQuad;
+		typedef Quad<(BitDepth - 1)> ChildQuad;
+		typedef Quad<BitDepth + 1> ParentQuad;
 
 	public:
 
@@ -246,7 +245,6 @@ namespace CellTree
 					{
 						const Point topLeft(myTopLeft.myX, (myTopLeft.myY - halfHeight - heightAdjust));
 						const Point bottomRight((myBottomRight.myX - halfWidth - widthAdjust), myBottomRight.myY);
-
 						mySw = new ChildQuad(myTree, myRoot, this, topLeft, bottomRight);
 					}
 
@@ -520,6 +518,7 @@ namespace CellTree
 		Tree* myTree;
 		RootQuad* myRoot;
 		ParentQuad* myParent;
+
 		Point myTopLeft;
 		Point myBottomRight;
 
