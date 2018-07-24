@@ -40,8 +40,10 @@
 # Logs
 *.*log
 
-# User files
-*.user
-
 # Compiled Resource scripts
 *.res
+
+# Visual Studio
+*.user
+*.vs
+*.suo
