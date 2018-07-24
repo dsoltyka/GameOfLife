@@ -6,9 +6,6 @@
 #include "Utils.h"
 
 #include <cassert>
-#include <vector>
-#include <unordered_map>
-#include <unordered_set>
 
 namespace CellTree
 {
