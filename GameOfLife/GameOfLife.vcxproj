@@ -140,7 +140,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="glider.txt" />
     <Text Include="input.txt">
       <DeploymentContent>false</DeploymentContent>
     </Text>

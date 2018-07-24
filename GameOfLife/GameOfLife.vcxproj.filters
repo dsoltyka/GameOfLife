@@ -16,7 +16,6 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
-    <Text Include="glider.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
