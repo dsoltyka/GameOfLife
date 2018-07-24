@@ -36,9 +36,6 @@ namespace CellTree
 		}
 	}
 
-	// TODO: lower level quads should call up to their root instead of the tree,
-	// they already notify the tree about needing to draw, but the SetCellState
-	// and AddNeighbors interfaces are slow now with the bounds checking
 	void Tree::AddNeighbors(const Point& aPoint, int aNumNeighbors)
 	{
 		CellTree::Point topLeft;
