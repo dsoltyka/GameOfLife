@@ -26,9 +26,10 @@ namespace GameOfLife
 		}
 
 		char delim;
+		CellTree::Point point;
 		while (true)
 		{
-			CellTree::Point point;
+			// We expect input data to be in (x, y) format
 			input >> delim >> point.myX >> delim >> point.myY >> delim;
 			if (input.eof())
 				break;
